@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Poll App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Web3 Polling Platform</h1>
+            <button id="connectWallet">Login with World ID</button>
+        </header>
+
+        <div class="dashboard">
+            <aside class="sidebar">
+                <button id="createPollBtn">Create Poll</button>
+                <button id="viewLivePolls">Live Polls</button>
+                <button id="viewPastPolls">Past Polls</button>
+                <button id="inviteUsers">Invite & Earn</button>
+            </aside>
+
+            <main class="content">
+                <section id="pollsSection">
+                    <h2>Live Polls</h2>
+                    <div id="livePolls"></div>
+                </section>
+
+                <section id="createPollSection" class="hidden">
+                    <h2>Create a Poll</h2>
+                    <input type="text" id="pollQuestion" placeholder="Enter your poll question">
+                    <button id="submitPoll">Submit for Approval</button>
+                </section>
+
+                <section id="donationSection">
+                    <h2>Donate WLD Coins</h2>
+                    <input type="text" id="donateToCreator" placeholder="Poll Creator Address">
+                    <input type="text" id="donateToPlatform" placeholder="Platform Address">
+                    <button id="donateBtn">Donate</button>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="web3.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
